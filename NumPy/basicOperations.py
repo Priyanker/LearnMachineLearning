@@ -32,3 +32,21 @@ print("SUM of each row:\n", b11.sum(axis=0))
 
 print("MIN of b11:\n", b11.min(axis=1))      # min of each row
 print("Cumulative sum along each row \n", b11.cumsum(axis=1))
+
+
+# UNIVERSAL FUNCTIONS
+
+# mathematical functions such as sin, cos, and exp.
+# In NumPy, these are called “universal functions”(ufunc).
+# these functions operate elementwise on an array
+
+B = np.arange(3)
+print(B)
+# array([0, 1, 2])
+print(np.exp(B))
+# array([1.,  2.71828183,  7.3890561])
+print(np.sqrt(B))
+# array([0.,  1.,  1.41421356])
+C = np.array([2., -1., 4.])
+print(np.add(B, C))
+# array([2.,  0.,  6.])
